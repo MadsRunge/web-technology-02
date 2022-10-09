@@ -1,0 +1,117 @@
+
+
+
+body{
+    display: flex;
+    background-color: whitesmoke ;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+header {
+    padding: 1px;
+    text-align: center;
+    background: goldenrod;
+    color: white;
+    font-size: 30px;
+    border: black solid;
+    font-style: italic;
+}
+.container{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    max-width: 1000px;
+
+
+}
+section{
+    background: white;
+    border-radius: 9px;
+
+}
+.toolsBoard{
+    width: 210px;
+    padding: 15px 22px 0;
+}
+
+.row .options{
+    margin: 10px 0 0 5px;
+    list-style: none;
+}
+.row .options .option{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.option :where(span,label){
+    color: darkgoldenrod;
+    padding-left: 5px;
+    cursor: pointer;
+}
+.option #sizeSlider{
+    width: 100%;
+    height: 5px;
+    margin-top: 10px;
+}
+.colors .options{
+    display: flex;
+    justify-content: space-between;
+}
+
+.option #colorPick{
+    opacity: 0;
+    cursor: pointer;
+}
+.colors .option{
+    display: flex;
+    list-style: none;
+    height: 20px;
+    width: 20px;
+
+    margin-top: 3px;
+    border-radius: 75%;
+    position: relative;
+
+}
+.colors .option:nth-child(1){
+    background-color: black;
+}
+.colors .option:nth-child(2){
+    background-color: red;
+}
+.colors .option:nth-child(3){
+    background-color: deepskyblue
+}
+.colors .option:nth-child(4){
+    background-color: yellow;
+}
+.colors .option:nth-child(5){
+    background-color: green
+}
+.buttons button{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: goldenrod;
+}
+
+
+img {
+    border: white solid;
+}
+
+.drawingBoard{
+    flex: 1
+}
+.drawingBoard canvas{
+    width: 100%;
+    height: 100%;
+}
+
+
